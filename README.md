@@ -1,40 +1,42 @@
-# Churn_Prediction
 
-Introduction
-Customer churn is a critical issue for many industries, where businesses lose clients to competitors or dissatisfaction. This project focuses on building machine learning models to predict customer churn, helping businesses identify at-risk customers and take proactive measures.
 
-The project workflow involves:
-Data Preprocessing: Cleaning and transforming raw data.
+# Churn Prediction
 
-Exploratory Data Analysis (EDA): Understanding key relationships between features and churn.
+Customer churn is a critical issue across industries where businesses lose clients due to dissatisfaction or competition. This project aims to build machine learning models to predict customer churn, enabling businesses to identify at-risk customers and take proactive measures to retain them.
 
-Feature Engineering: Enhancing the dataset with new features.
+## Project Workflow
+The project follows these steps:
+1. **Data Preprocessing**: Cleaning and transforming raw data to prepare it for analysis.
+2. **Exploratory Data Analysis (EDA)**: Gaining insights into customer behavior and identifying key relationships between features and churn.
+3. **Feature Engineering**: Creating new features, encoding categorical variables, and scaling numerical data to improve model performance.
+4. **Modeling**: Training several machine learning models to predict churn.
+5. **Model Evaluation**: Comparing model performance using various metrics.
+6. **Insights and Interpretation**: Understanding the key drivers of churn based on model results.
 
-Modeling: Training several machine learning models.
+## Techniques Used
 
-Model Evaluation: Comparing model performance using various metrics.
+### Exploratory Data Analysis (EDA)
+Visualizations such as histograms, bar plots, and correlation heatmaps revealed key patterns in customer behavior:
+- Higher churn rates for customers with month-to-month contracts.
+- A strong correlation between high monthly charges and churn.
 
-Insights and Interpretation: Understanding the key drivers of churn based on model results.
+### Feature Engineering
+- **New Features**: Created tenure categories to capture the effect of customer loyalty.
+- **One-hot Encoding**: Converted categorical features like contract type, payment method, and internet service into numerical values.
+- **Scaling**: Scaled numerical features such as monthly charges to improve model performance.
 
-Techniques Used
-Exploratory Data Analysis (EDA) Visualization: Histograms, bar plots, and correlation heatmaps revealed patterns in customer behavior, such as: Higher churn rates for customers with month-to-month contracts. A strong correlation between high monthly charges and churn.
+### Machine Learning Models
+Several machine learning models were applied, including:
+- Logistic Regression
+- Support Vector Machine (SVM)
+- Decision Tree
+- Random Forest
 
-Feature Engineering New Features: Created tenure categories to help capture the effect of customer loyalty. One-hot Encoding: Categorical features like contract type, payment method, and internet service were converted into numerical values for model input. Scaling: Numerical features such as monthly charges were scaled to improve model performance
+## Key Insights
+- **Contract Type**: Customers with month-to-month contracts were far more likely to churn.
+- **Monthly Charges**: Higher monthly charges increased the likelihood of churn.
+- **Customer Tenure**: Newer customers had a higher chance of churning.
+- **Paperless Billing**: Slightly higher churn was observed among customers using paperless billing, possibly due to less frequent interaction with the company.
 
-Modeling Several machine learning models were applied:
+---
 
-Logistic Regression
-
-SVM
-
-Decision Tree
-
-Random Forest
-
-Contract Type: Customers with month-to-month contracts were far more likely to churn.
-
-Monthly Charges: Higher monthly charges led to increased churn likelihood.
-
-Customer Tenure: Newer customers had a higher chance of churning.
-
-Paperless Billing: Slightly higher churn was seen among customers using paperless billing, possibly due to less frequent interaction with the company.
